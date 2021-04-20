@@ -1,5 +1,5 @@
 trying
-try 1
+try 2
 grid 1-4 -> tr 1-4
 grid 5-8 -> to.tr 1-4
 
@@ -24,11 +24,11 @@ TR I 0
 TO.TR I 0
 
 #3
-if >= G.LED T I 1: TR I 1
+if >= G.LED T I 1 : TR I 1
 
 #4
 B - I 4
-if >= G.LED T B 1: TO.TR B 1
+if >= G.LED T B 1 : TO.TR B 1
 
 #5
 B I

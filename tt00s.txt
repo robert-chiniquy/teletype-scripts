@@ -1,5 +1,5 @@
 TRYING
-try 1a
+
 GRID 1-4 -> TR 1-4
 GRID 5-8 -> TO.TR 1-4
 
