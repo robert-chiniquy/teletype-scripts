@@ -27,15 +27,17 @@ TO.TR I 0
 if >= G.LED T I 1: TR I 1
 
 #4
-if >= G.LED T - I 4 1: TO.TR - I 4 1
+B - I 4
+if >= G.LED T B 1: TO.TR B 1
 
 #5
 B I
-L 1 16:G.LED B I PN - B 4 + I 16
+A PN - B 4 + I 16
+L 1 16: G.LED B I A
 
 #6
 B I
-L 1 16:G.LED B I PN B I
+L 1 16: G.LED B I PN B I
 
 #7
 X - X 4
@@ -46,7 +48,7 @@ X G.BTN.X G.BTNI
 Y G.BTN.Y G.BTNI
 A G.LED X Y
 A % + A 2 16
-IF X > 4: $ 7
+IF > X 4: $ 7
 PN X Y A; G.LED X Y A
 
 #M
