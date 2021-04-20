@@ -1,5 +1,5 @@
 trying
-try 3.5
+try 4
 grid 1-4 -> tr 1-4
 grid 5-8 -> to.tr 1-4
 
@@ -33,29 +33,30 @@ if >= G.LED T I 1 : TO.TR B 1
 #5
 B I
 A PN - B 4 + T 16
-L 1 16: G.LED B I A
+L 1 16: G.LED I B A
 
 #6
 B I
-L 1 16: G.LED B I PN B I
+L 1 16: G.LED I B PN B I
 
 #7
-X - X 4
-y + y 16
+Y - Y 4
+X + X 16
 
 #8
 X G.BTN.X G.BTNI
 Y G.BTN.Y G.BTNI
 A G.LED X Y
 A % + A 2 16
-IF > X 4: $ 7
-PN X Y A; G.LED X Y A
+IF > Y 4: $ 7
+PN Y X A; G.LED X Y A
 
 #M
-G.CLR; G.REC T 0 1 8 -2 -2
+G.CLR
 L 1 4: $ 6
 L 5 6: $ 5
 $ 1
+G.REC T 0 1 8 -2 -2
 
 #I
 Z 16
